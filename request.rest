@@ -1,0 +1,45 @@
+GET http://localhost:7071/api/getall HTTP/1.1
+
+###
+
+POST http://localhost:7071/api/addchild HTTP/1.1
+Content-Type: application/json
+
+{
+   "stamboeknummer":"K000003",
+   "Naam":"Beter",
+   "Voornaam":"TEEBOOOOOOO",
+   "klas":"2C",
+   "Email":"ikgeefop@gmail.com"
+}
+
+###
+
+GET http://localhost:7071/api/K000001 HTTP/1.1
+
+###
+
+POST http://localhost:7071/api/addmaaltijd HTTP/1.1
+Content-Type: application/json
+
+{
+   "stamboeknummer":"K000001",
+   "keuze":[
+      {
+         "warm":"false"
+      },
+      {
+         "boterhammen":"true"
+      },
+      {
+         "nietopschool":"false"
+      }
+   ],
+   "datum":"01/01/2022"
+}
+
+###
+
+GET http://localhost:7071/api/klas/2C HTTP/1.1
+
+###
